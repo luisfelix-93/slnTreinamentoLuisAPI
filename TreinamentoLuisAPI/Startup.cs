@@ -44,6 +44,7 @@ namespace TreinamentoLuisAPI
             services.AddTransient<PersonService>();
 
 
+            services.AddControllers();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1.2", new OpenApiInfo { Title = "TreinamentoLuisAPI", Version = "v1" });
